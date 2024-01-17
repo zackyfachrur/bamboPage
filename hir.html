@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>HIR - Pring Astula</title>
+  <meta content name="description" />
+  <meta content name="keywords" />
+
+  <!-- Favicons -->
+  <link href="assets/img/bambo/logo/navbar-brand.png" rel="icon" />
+  <link href="assets/img/bambo/logo/navbar-brand.png" rel="apple-touch-icon" />
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <link href="assets/css/variables.css" rel="stylesheet" />
+  <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/bambo/logo/navbar-brand.png" alt="brand" />
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul class="me-5 p-2">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="dropdown ">
+            <a href="#" class="active"><span>Services </span>
+              <i class="bi bi-caret-down-fill dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="sourcing.html">Penyedia Tenaga Outsourcing</a></li>
+                <li><a href="analyst.html">Business Process Analyst</a></li>
+                <li><a href="job-evaluation.html">Job Evaluation</a></li>
+                <li><a href="assessment.html">Assessment Center</a></li>
+                <li><a href="training.html">Training and Development</a></li>
+                <li><a href="performance.html">Performance Management System</a></li>
+                <li><a href="culture.html">Culture Management</a></li>
+                <li><a href="hir.html">Human Resource Management System (HRIS)</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="career.html">Career</a></li>
+          <li><a class="nav-link" href="article.html">Article</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <div class="btn-getstarted">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-search" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </ul>
+
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav>
+      <!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->
+  <div class="row">
+    <div class="sub-services col-lg-12">
+      <img src="/assets/img/bambo/sub-1.jpg" class="img-fluid" alt>
+    </div>
+  </div>
+
+  <div class="sub-services container py-4 mt-10">
+    <div class="container">
+      <div class="sub-div p-5 mb-4 bg-body-tertiary border border rounded-3">
+        <div class="container-fluid py-5">
+          <h3 class="info fw-bold">Human Resource Management System (HRIS)</h3>
+          <p class="col-md-10">Manajemen Sumber Daya Manusia (MSDM) adalah sistem untuk mengelola SDM di perusahaan,
+            mengotomatiskan, mengelola, dan mengoptimalkan proses HR. Mengelola karyawan secara manual dapat menyebabkan
+            kesalahan, ketidakefisienan, dan pemborosan waktu.
+          </p>
+          <p class="col-md-10">HRIS (Human Resource Information System) adalah solusi yang tepat untuk mengatasi masalah
+            tersebut. HRIS adalah sistem informasi yang membantu perusahaan untuk mengelola karyawan secara efektif dan
+            efisien.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content 1 -->
+  <div class="container" data-aos="fade-up">
+    <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="col-lg-5">
+        <div class="about-img">
+          <img src="assets/img/bambo/sub-service/outsourcing.png" class="img-fluid" alt>
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center">
+        <!-- Tab Content -->
+        <div class="tab-content">
+
+          <div class="sub-services fade show active col-lg-12 align-items-center" id="tab1">
+
+            <div class="col-md-12 col-lg-12 mt-4">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                <ul class="list-unstyled ps-0" style="line-height: 1.8;">
+                  <p style="color: var(--color-primary);" class="fw-bold">
+                    Dengan HRIS kami, perusahaan dapat:</p>
+                  <li>
+                    <i class="bi bi-x"></i>
+                    Meningkatkan efisiensi dan produktivitas HR
+
+                  </li>
+                  <li>
+                    <i class="bi bi-x"></i>
+                    Meningkatkan akurasi dan konsistensi data HR
+
+
+                  </li>
+                  <li>
+                    <i class="bi bi-x"></i>
+                    Meningkatkan transparansi dan visibilitas proses HR
+
+                  </li>
+
+                  <li>
+                    <i class="bi bi-x"></i>
+                    Menjaga kepatuhan terhadap peraturan ketenagakerjaan
+
+                  </li>
+
+                  <li>
+                    <i class="bi bi-x"></i>
+                    Meningkatkan kepuasan karyawan
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- End Tab 1 Content -->
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-lg-12 mt-4">
+    <div class="vis-section-2 sub-title h-100 p-5">
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="sub-services container py-4 mt-10">
+
+      <div class="sub-div p-5 mb-4 bg-body-tertiary border rounded-3">
+        <div class="container-fluid py-5">
+          <p style="color: var(--color-primary);" class="fw-bold">HRIS memiliki berbagai fitur yang canggih, seperti:
+          </p>
+
+          <ul class="list-unstyled ps-0" style="line-height: 1.8;">
+            <li>
+              <i class="bi bi-x"></i>
+              HRIS membantu perusahaan mengelola rekrutmen dan seleksi, termasuk posting lowongan, screening CV, hingga
+              wawancara.
+            </li>
+            <li>
+              <i class="bi bi-x"></i>
+              HRIS membantu perusahaan mengelola program pelatihan dan pengembangan karyawan, dari perencanaan hingga
+              evaluasi.
+            </li>
+            <li>
+              <i class="bi bi-x"></i>
+              HRIS membantu perusahaan mengelola sistem kompensasi dan benefit karyawan, termasuk perhitungan gaji,
+              tunjangan, dan asuransi.
+            </li>
+            <li>
+              <i class="bi bi-x"></i>
+              HRIS membantu perusahaan mengelola sistem manajemen kinerja karyawan, termasuk pengukuran, penilaian, dan
+              pemberian umpan balik.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-div p-5 mb-4 bg-body-tertiary border rounded-3">
+      <div class="container-fluid py-5">
+        <p style="color: var(--color-primary);" class="fw-bold">Bagi perusahaan, HRIS adalah solusi berharga untuk
+          pengelolaan SDM, memungkinkan:</p>
+
+        <ul class="list-unstyled ps-0" style="line-height: 1.8;">
+          <li>
+            <i class="bi bi-x"></i>
+            Menghemat waktu dan biaya HR
+          </li>
+          <li>
+            <i class="bi bi-x"></i>
+            Meningkatkan efektivitas proses HR
+          </li>
+          <li>
+            <i class="bi bi-x"></i>
+            Mengembangkan karyawan yang lebih kompeten
+          </li>
+          <li>
+            <i class="bi bi-x"></i>
+            Menciptakan budaya kerja yang positif
+          </li>
+        </ul>
+        <p class="col-md-10">Kami paham setiap perusahaan unik. Bersama Anda, kami akan membangun dan menerapkan solusi
+          HRIS yang sesuai dengan kebutuhan perusahaan Anda, didukung oleh tim ahli kami.</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+  <div class="col-lg-12 mt-4">
+
+    <footer class="text-center text-lg-start text-white"
+      style="background: var(--color-primary); border-radius: 20px 20px 0 0;">
+
+      <section class="foot" id="foot">
+        <div class="container text-center text-md-start">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <img src="/assets/img/bambo/logo/babos-footer.png" alt class="img-fluid" style="width: 50%;">
+              <hr class="mb-0 mt-0 d-inline-block mx-auto"
+                style="width: 50%; background: var(--color-primary-dark); height: 2px" />
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-xl-4 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background: var(--color-primary-dark); height: 2px" />
+              <p>
+                <a href="#!" class="text-white">No Kantor : +62-828-9988-9999</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">No Hp : +62-828-9988-9999 </a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">No Wa : +62-828-9988-9999 </a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Email : example@gmail.com </a>
+              </p>
+              <div class="social-icons3 clearfix">
+                <a href="/"><i class="bi bi-facebook"></i></a>
+                <a href="/"><i class="bi bi-linkedin"></i></a>
+                <a href="/"><i class="bi bi-instagram"></i></a>
+                <a href="/"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-sm-6 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Alamat</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background: var(--color-primary-dark); height: 2px" />
+              <p> Jalan Kenari 345 122345 Kalimantan Timur Jawa Barat</p>
+            </div>
+          </div>
+      </section>
+
+      <div class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2); font-weight: 400; font-size: 15px; border-radius: 20px 20px 0 0;">
+        © Copyright 2023
+        <a class="text-white" href="/" style="font-weight: 400;">PRING
+          ASTULA - All Rights Reserved</a>
+        <a class="text-white row text-center align-items-center d-flex justify-content-center"
+          href="https://himpsijaya.org/" target="_blank" style="font-weight: 400; text-transform: capitalize;">member by
+          Logo HIMSI Jaya </a>
+      </div>
+    </footer>
+
+  </div>
+  <!-- End of .container -->
+
+  <!-- <div class="footer-legal text-center">
+              <div
+                  class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+                  <div class="d-flex flex-column align-items-center align-items-lg-start">
+                      <div class="copyright">
+                          &copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved
+                      </div>
+                      <div class="credits">
+                          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                      </div>
+                  </div>
+
+                  <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  </div>
+              </div>
+          </div> -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
