@@ -2,7 +2,7 @@
 
 ### Iam currently learning programming 😉
 
-```
+```js
 let selectScrollto = document.querySelectorAll(".scrollto");
   selectScrollto.forEach((el) =>
     el.addEventListener("click", function (event) {
@@ -21,4 +21,4 @@ let selectScrollto = document.querySelectorAll(".scrollto");
       }
     })
   );
-```js
+```
