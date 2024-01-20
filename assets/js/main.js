@@ -283,11 +283,11 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesPerView: 'auto',
       breakpoints: {
         320: {
-          slidesPerView: 2,
+          slidesPerView: 4,
           spaceBetween: 40
         },
         480: {
-          slidesPerView: 4,
+          slidesPerView: 6,
           spaceBetween: 60
         },
         640: {
@@ -295,9 +295,13 @@ document.addEventListener("DOMContentLoaded", () => {
           spaceBetween: 80
         },
         992: {
+          slidesPerView: 7,
+          spaceBetween: 120
+        },
+        1100: {
           slidesPerView: 8,
           spaceBetween: 120
-        }
+        },
       }
     });
 
@@ -312,11 +316,11 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesPerView: 'auto',
       breakpoints: {
         320: {
-          slidesPerView: 2,
+          slidesPerView: 4,
           spaceBetween: 40
         },
         480: {
-          slidesPerView: 4,
+          slidesPerView: 6,
           spaceBetween: 60
         },
         640: {
@@ -324,9 +328,13 @@ document.addEventListener("DOMContentLoaded", () => {
           spaceBetween: 80
         },
         992: {
+          slidesPerView: 7,
+          spaceBetween: 120
+        },
+        1100: {
           slidesPerView: 8,
           spaceBetween: 120
-        }
+        },
       }
     });
   
