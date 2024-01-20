@@ -2,6 +2,8 @@
 
 ### Iam currently learning programming 😉
 
+
+### Noted Navbar Logic
 ```js
 let selectScrollto = document.querySelectorAll(".scrollto");
   selectScrollto.forEach((el) =>
