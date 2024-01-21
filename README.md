@@ -1,9 +1,9 @@
 ### Just a simple bamboo page
 
-### Iam currently learning programming 😉
+#### Iam currently learning programming 😉
 
 
-### Noted Navbar Logic
+#### Noted Navbar Logic
 ```js
 let selectScrollto = document.querySelectorAll(".scrollto");
   selectScrollto.forEach((el) =>
