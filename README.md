@@ -1,5 +1,5 @@
 ___________________________________________________
-📁 Company Profile with bamboo business product
+# 📁 Company Profile with bamboo business product
 ___________________________________________________
 ### 📘 Library :
 #### AOS (Animate On Scroll)
